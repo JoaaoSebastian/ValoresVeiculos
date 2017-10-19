@@ -9,6 +9,15 @@
     </head>
     <body>
         <h1>Calculo de Preços</h1>
+        <%
+             double valor ;
+             double veiculo ;
+             double vista ;
+             double tresx ;
+             double seisx ;
+             double dezx ;
+             double dozex ;
+        %>
         <form>
             Digite o valor do veículo: <input type ="number" name="valor" value=" " ></br> </br>
         Escolha o tipo do veículo: </br></br>       
@@ -18,6 +27,14 @@
         Caminhão:   <input type="radio" name="veiculo" value="caminhao"></br>
         <input type="submit" name="Enviar" value="Calcular">                          
         </form>
+        <%
+            get.vista() System.out.print(vista);
+            System.out.print(tresx);
+            System.out.print(seisx);
+            System.out.print(dezx);
+            System.out.print(dozex);
+        
+        %>
         
     </body>
 </html>
