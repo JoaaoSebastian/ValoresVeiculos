@@ -35,7 +35,7 @@
         Moto:       <input type='radio' name='veiculo' value='moto'>
         Utilitario: <input type='radio' name='veiculo' value='utilitario'>
         Caminhão:   <input type='radio' name='veiculo' value='caminhao'></br>
-        <input type='submit' name='Enviar' value='Calcular'>                          
+        <input type='submit' name='Enviar' value='Enviar'>                          
         </form>
               <%
         
