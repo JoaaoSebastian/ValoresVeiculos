@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-
+<%@page import="java.text.DecimalFormat"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,30 +15,11 @@
              double dezx = 0;
              double dozex = 0;
              
-             String veiculo = (request.getParameter("veiculo"));
               try{
-                if(request.getParameter("valor")!= null){
+                if(request.getParameter("Enviar")!= null){
                 valor = Double.parseDouble(request.getParameter("valor"));
-                }
-            }
-            catch(Exception ex){
-                out.println("<span style='color:red;'>Você entrou com um número no formato inválido no campo de Valor. Tente novamente: </span><br>");
-            }
-              
-              %>
-              <h1>Calculo de Preços</h1>
-        <form>
-        Digite o valor do veículo: <input type ='number' name='valor' value='' ></br> </br>
-        Escolha o tipo do veículo: </br></br>       
-        Carro:      <input type='radio' name='veiculo' value='carro'>
-        Moto:       <input type='radio' name='veiculo' value='moto'>
-        Utilitario: <input type='radio' name='veiculo' value='utilitario'>
-        Caminhão:   <input type='radio' name='veiculo' value='caminhao'></br>
-        <input type='submit' name='Enviar' value='Enviar'>                          
-        </form>
-              <%
-        
-        if(veiculo.equals("carro")){
+                String veiculo = (request.getParameter("veiculo"));
+                if(veiculo.equals("carro")){
              vei = 1;
              }
              else if(veiculo.equals("moto")){
@@ -74,27 +54,48 @@
             dozex = vista/12*1.15;
         }
         else if (vei == 4) {
-            vista = valor*0.11;
+            vista = valor*0.15;
             tresx = vista/3;
             seisx = vista/6*1.035;
             dezx = vista/10*1.095;
             dozex = vista/12*1.15;
-}              
-    %>
-    <table>
-        <th>Tabela de Valores</th>
+}              }
+            }
+            catch(Exception ex){
+                out.println("<span style='color:red;'>Você entrou com um número no formato inválido no campo de Valor. Tente novamente: </span><br>");
+            }
+              
+              %>
+    <center>   <h1>Calculo de Preços</h1>
+        <form>
+        Digite o valor do veículo: <input type ='number' name='valor' value='' ></br> </br>
+        Escolha o tipo do veículo: </br>       
+        Carro:<input type='radio' name='veiculo' value='carro'>
+          Moto:<input type='radio' name='veiculo' value='moto'>
+          Utilitario:<input type='radio' name='veiculo' value='utilitario'>
+          Caminhão:<input type='radio' name='veiculo' value='caminhao'></br></br>
+        <input type='submit' name='Enviar' value='Enviar'>                          
+        </form><center>
+            
+              <%
+    if(request.getParameter("Enviar") != null){%>
+    </br> <center><table border='1'>
+        <th colspan='6'>TABELA DE VALORES</th>
         <tr>
-            <td>Á vista</td>
-            <td>3x sem juros</td>
-            <td>6x c/ 3,5%</td>
-            <td>10x c/ 9,5%</td>
-            <td>12x c/ 15%</td>
+            <th width='120'><center>Valor Veículo</center></th>
+            <th width='120'><center>Á vista</center></th>
+            <th width='120'><center>3x sem juros</center></th>
+            <th width='120'><center>6x </center></th>
+            <th width='120'><center>10x </center></th>
+            <th width='120'><center>12x </center></th>
         </tr>
-        <td><%=vista%></td>
-        <td><%=tresx%></td>
-        <td><%=seisx%></td>
-        <td><%=dezx%></td>
-        <td><%=dozex%></td>
-    </table>    
+        <td width='120'><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
+        <td lwidth='120'><center>R$ <%=new DecimalFormat("0.00").format(vista)%></center></td>
+        <td width='120'><center>R$ <%=new DecimalFormat("0.00").format(tresx)%></center></td>
+        <td lwidth='120'><center>R$ <%=new DecimalFormat("0.00").format(seisx)%></center></td>
+        <td width='120'><center>R$ <%=new DecimalFormat("0.00").format(dezx)%></center></td>
+        <td width='120'><center>R$ <%=new DecimalFormat("0.00").format(dozex)%></center></td>
+        <%}%>
+        </table></center>  
     </body>
 </html>
