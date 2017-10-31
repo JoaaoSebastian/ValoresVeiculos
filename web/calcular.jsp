@@ -1,9 +1,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.text.DecimalFormat"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Calculo Veículos</title>
     </head>
     <body>
@@ -706,8 +710,9 @@
             }
               
               %>
-    <center>   <h1>Calculo de Preços</h1>
-        <form>
+              <div class="container-fluid">
+      <h1 class="bg-primary text-center">Cotação OnLine</h1>
+        <form class="text-center">
         Digite o valor do veículo: <input type ='number' name='valor' value='' ></br> </br>
         <h4>Escolha o tipo do veículo:</h4>   
         | Carro:<input type='radio' name='veiculo' value='carro'>
@@ -715,12 +720,14 @@
         | Utilitário:<input type='radio' name='veiculo' value='utilitario'>
         | Caminhão:<input type='radio' name='veiculo' value='caminhao'> |</br></br>
         <input type='submit' name='Enviar' value='Enviar'>                          
-        </form><center>
+        </form></div>
             
               <%
     if(request.getParameter("Enviar") != null){%>
-    </br> <center><table border='1'>
-        <th colspan='7'>TABELA DE VALORES</th>
+    </br>
+    <div class="container-fluid">
+        <center> <table class="table table-striped table-bordered table-hover">
+                <th colspan='7' class="bg-primary"><center>TABELA DE VALORES</center></th>
         <tr>
             <th width='120'><center>Valor Veículo</center></th>
             <th width='120'><center>Á vista</center></th>
@@ -738,6 +745,6 @@
         <td width='120'><center>R$ <%=new DecimalFormat("0.00").format(dezx)%></center></td>
         <td width='120'><center>R$ <%=new DecimalFormat("0.00").format(dozex)%></center></td>
         <%}%>
-        </table></center>  
+            </table></center></div> 
     </body>
 </html>
