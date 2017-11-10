@@ -14,7 +14,7 @@
         <%   double valor = 0;
              int vei = 0 ;
              double por = 0;
-             double vista = 0 ;
+             double vista = 0;
              double tresx = 0;
              double quatrox = 0;
              double seisx = 0;
@@ -43,7 +43,6 @@
              else if(veiculo.equals("caminhao")){
              vei = 4;
              }
-            
     if(valor >= 5000 && valor < 8000){
                 if( vei == 1){
             vista = valor*0.1165;
@@ -1176,16 +1175,21 @@
               %>
               <div class="container-fluid">
       <h1 class="bg-primary text-center">Cotação OnLine</h1>
+      </br>
         <fieldset> 
-            <form class="text-center">
-                Digite o valor do veículo: <input type ='number' name='valor' value='' ></br> </br>
+             <form class="text-center">
+                Digite o ano do veiculo: <input type='text' name='ano' value='' size='2'>
+                Digite o modelo do veículo: <input type='text' name='modelo' value='' size='10'>
+                Digite a cor do veiculo: <input type='text' name='cor' value='' size='5'>
+                Digite a placa do veiculo: <input type='text' name='placa' value='' size='4'></br> </br>
+                Digite o valor do veículo:  <input type ='number' name='valor' value='' ></br> </br>
                 <h4>Escolha o tipo do veículo:</h4>   
                 | Carro:<input type='radio' name='veiculo' value='carro'>
                 | Moto:<input type='radio' name='veiculo' value='moto'>
                 | Utilitário:<input type='radio' name='veiculo' value='utilitario'>
                 | Caminhão:<input type='radio' name='veiculo' value='caminhao'> |</br></br>
                 <input type='submit' name='Enviar' value='Enviar'>                          
-            </form>
+                </form>
         </fieldset></div>
             
               <%
@@ -1193,7 +1197,23 @@
     </br>
     <div class="container-fluid">
         <center> <table class="table table-bordered table-hover">
-                <th colspan='8' class="bg-primary"><center>TABELA DE VALORES</center></th>
+        <tr>
+            <th colspan='8' class="bg-primary"><center>INFORMAÇÕES DO VEÍCULO</center></th>
+        </tr>
+        <tr>
+            <th colspan='2' width='120'><center>Modelo</center></th>
+            <th colspan='2' width='120'><center>Ano</center></th>
+            <th colspan='2' width='120'><center>Cor</center></th>
+            <th colspan='2' width='120'><center>Placa</center></th>   
+        </tr>
+        <tr>
+            <td colspan='2'><center><%=request.getParameter("modelo")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("ano")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("cor")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("placa")%></center></td>
+        <tr>
+            <th colspan='8' class="bg-primary"><center>TABELA DE VALORES</center></th>
+        </tr>
         <tr>
             <th width='120'> </th>
             <th width='120'><center>Valor Veículo</center></th>
@@ -1205,25 +1225,25 @@
             <th width='120'><center>12x </center></th>
         </tr>
         <tr>
-        <th ><center>S/ Adesão</center></th>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(vista)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(tresx)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(quatrox)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(seisx)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(dezx)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(dozex)%></center></td>
+            <th ><center>S/ Adesão</center></th>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(vista)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(tresx)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(quatrox)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(seisx)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(dezx)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(dozex)%></center></td>
         </tr>
         
         <tr>
-        <th ><center>C/ Adesão</center></th>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(vistat)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(tresxt)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(quatroxt)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(seisxt)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(dezxt)%></center></td>
-        <td ><center>R$ <%=new DecimalFormat("0.00").format(dozext)%></center></td>
+            <th ><center>C/ Adesão</center></th>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(vistat)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(tresxt)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(quatroxt)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(seisxt)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(dezxt)%></center></td>
+            <td ><center>R$ <%=new DecimalFormat("0.00").format(dozext)%></center></td>
         </tr>
         <%}%>
             </table></center></div> 
