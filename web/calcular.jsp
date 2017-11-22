@@ -31,6 +31,7 @@
                 if(request.getParameter("Enviar")!= null){
                 valor = Double.parseDouble(request.getParameter("valor"));
                 String veiculo = (request.getParameter("veiculo"));
+                String cotacao = (request.getParameter("cotacao"));
                 if(veiculo.equals("carro")){
              vei = 1;
              }
@@ -43,6 +44,7 @@
              else if(veiculo.equals("caminhao")){
              vei = 4;
              }
+             if(cotacao.equals("normal")){
     if(valor >= 5000 && valor < 8000){
                 if( vei == 1){
            /* vista = valor*0.085;
@@ -266,7 +268,7 @@
             dozext = vistat/12*1.1156;
         }
         else if (vei == 4) {
-            vista = valor*0.12;
+            vista = valor*0.13;
             tresx = vista/3;
             quatrox = vista/4*1.0226;
             seisx = vista/6*1.0468;
@@ -1018,7 +1020,7 @@
             dozext = vistat/12*1.15;
         }
         else if (vei == 3) {
-            vista = valor*0.065;
+            vista = valor*0.06;
             tresx = vista/3;
             quatrox = vista/4*1.0226;
             seisx = vista/6*1.0468;
@@ -1077,7 +1079,7 @@
             dozext = vistat/12*1.15;
         }
         else if (vei == 3) {
-            vista = valor*0.115;
+            vista = valor*0.06;
             tresx = vista/3;
             quatrox = vista/4*1.0226;
             seisx = vista/6*1.0468;
@@ -1136,7 +1138,7 @@
             dozext = vistat/12*1.15;
         }
         else if (vei == 3) {
-            vista = valor*0.0695;
+            vista = valor*0.06;
             tresx = vista/3;
             quatrox = vista/4*1.0226;
             seisx = vista/6*1.0468;
@@ -1150,7 +1152,246 @@
             dozext = vistat/12*1.1156;
         }
         else if (vei == 4) {
-            vista = valor*0.135;
+            vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
+    }
+             
+    }else if(cotacao.equals("menosum")){
+    if(valor >= 5000 && valor < 8000){
+                if( vei == 1){
+           /* vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;*/
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.108;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1098;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1275;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 8000 && valor < 10000){
+                if( vei == 1){
+            /* vista = valor*0.112;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;*/
+            
+        }
+       else if (vei == 2) {
+            vista = valor*0.104;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+            
+        }
+        else if (vei == 3) {
+            vista = valor*0.1053;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.125;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+                                   }
+    else if(valor >= 10000 && valor < 12000){
+                if( vei == 1){
+            vista = valor*0.075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.10;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1008;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1225;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 12000 && valor < 14000){
+                if( vei == 1){
+            vista = valor*0.071;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.096;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0963;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.12;
             tresx = vista/3;
             quatrox = vista/4*1.0226;
             seisx = vista/6*1.0468;
@@ -1164,9 +1405,3137 @@
             dozext = vistat/12*1.1156;
             }           
     }
+    else if(valor >= 14000 && valor < 16000){
+                if( vei == 1){
+            vista = valor*0.067;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.092;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0923;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1175;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 16000 && valor < 18000){
+                if( vei == 1){
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.088;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0883;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.115;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 18000 && valor < 20000){
+                if( vei == 1){
+            vista = valor*0.059;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.084;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0843;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1125;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 20000 && valor < 23000){
+                if( vei == 1){
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.08;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0803;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.11;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 23000 && valor < 25000){
+                if( vei == 1){
+            vista = valor*0.051;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.076;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0763;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 25000 && valor < 27000){
+                if( vei == 1){
+            vista = valor*0.047;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.105;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 27000 && valor < 29000){
+                if( vei == 1){
+            vista = valor*0.043;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.068;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.066;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1025;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 29000 && valor < 34000){
+                if( vei == 1){
+            vista = valor*0.041;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.066;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.062;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.0985;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 34000 && valor < 38000){
+                if( vei == 1){
+            vista = valor*0.039;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.064;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.0945;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 38000 && valor < 42000){
+                if( vei == 1){
+            vista = valor*0.037;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.062;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.095;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }else if(valor >= 42000 && valor < 46000){
+                if( vei == 1){
+            vista = valor*0.035;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.06;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.05;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.09;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 46000 && valor < 50000){
+                if( vei == 1){
+            vista = valor*0.033;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.05;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 50000 && valor < 55000){
+                if( vei == 1){
+            vista = valor*0.033;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.05;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext= vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.08;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 55000 && valor < 60000){
+                if( vei == 1){
+            vista = valor*0.033;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.05;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 60000 && valor <= 70000){
+                if( vei == 1){
+            vista = valor*0.033;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.045;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
     
-    
-                                                     }
+                }
+    }else if(cotacao.equals("menosmeio")){
+    if(valor >= 5000 && valor < 8000){
+                if( vei == 1){
+           /* vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;*/
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.114;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1148;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1325;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 8000 && valor < 10000){
+                if( vei == 1){
+            /* vista = valor*0.112;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;*/
+            
+        }
+       else if (vei == 2) {
+            vista = valor*0.109;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+            
+        }
+        else if (vei == 3) {
+            vista = valor*0.1103;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.13;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+                                   }
+    else if(valor >= 10000 && valor < 12000){
+                if( vei == 1){
+            vista = valor*0.08;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.105;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1275;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 12000 && valor < 14000){
+                if( vei == 1){
+            vista = valor*0.076;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.101;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1013;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.125;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 14000 && valor < 16000){
+                if( vei == 1){
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.097;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0973;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1225;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 16000 && valor < 18000){
+                if( vei == 1){
+            vista = valor*0.068;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.093;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0933;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.12;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 18000 && valor < 20000){
+                if( vei == 1){
+            vista = valor*0.064;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.089;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0893;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1175;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 20000 && valor < 23000){
+                if( vei == 1){
+            vista = valor*0.06;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0853;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.115;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 23000 && valor < 25000){
+                if( vei == 1){
+            vista = valor*0.056;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.081;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0813;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1125;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 25000 && valor < 27000){
+                if( vei == 1){
+            vista = valor*0.052;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.077;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.077;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.11;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 27000 && valor < 29000){
+                if( vei == 1){
+            vista = valor*0.048;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.073;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.071;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 29000 && valor < 34000){
+                if( vei == 1){
+            vista = valor*0.046;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.071;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.067;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1035;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 34000 && valor < 38000){
+                if( vei == 1){
+            vista = valor*0.044;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.069;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.0995;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 38000 && valor < 42000){
+                if( vei == 1){
+            vista = valor*0.042;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.067;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.06;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.095;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }else if(valor >= 42000 && valor < 46000){
+                if( vei == 1){
+            vista = valor*0.04;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.065;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.095;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 46000 && valor < 50000){
+                if( vei == 1){
+            vista = valor*0.038;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.09;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 50000 && valor < 55000){
+                if( vei == 1){
+            vista = valor*0.038;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext= vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 55000 && valor < 60000){
+                if( vei == 1){
+            vista = valor*0.038;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 60000 && valor <= 70000){
+                if( vei == 1){
+            vista = valor*0.038;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.08;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
+    }
+            }else if(cotacao.equals("maismeio")){
+    if(valor >= 5000 && valor < 8000){
+                if( vei == 1){
+           /* vista = valor*0.085;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;*/
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.123;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1248;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1425;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 8000 && valor < 10000){
+                if( vei == 1){
+            /* vista = valor*0.112;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;*/
+            
+        }
+       else if (vei == 2) {
+            vista = valor*0.119;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+            
+        }
+        else if (vei == 3) {
+            vista = valor*0.1203;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.14;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+                                   }
+    else if(valor >= 10000 && valor < 12000){
+                if( vei == 1){
+            vista = valor*0.09;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.115;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1158;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1375;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 12000 && valor < 14000){
+                if( vei == 1){
+            vista = valor*0.086;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.111;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1113;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.17;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 14000 && valor < 16000){
+                if( vei == 1){
+            vista = valor*0.082;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.107;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1073;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1325;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 16000 && valor < 18000){
+                if( vei == 1){
+            vista = valor*0.078;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.103;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.1033;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.13;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 18000 && valor < 20000){
+                if( vei == 1){
+            vista = valor*0.074;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.099;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0993;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1275;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 20000 && valor < 23000){
+                if( vei == 1){
+            vista = valor*0.07;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.095;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0953;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.125;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 23000 && valor < 25000){
+                if( vei == 1){
+            vista = valor*0.066;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.091;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.0913;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1225;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 25000 && valor < 27000){
+                if( vei == 1){
+            vista = valor*0.062;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.087;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.087;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.12;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 27000 && valor < 29000){
+                if( vei == 1){
+            vista = valor*0.058;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.083;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.083;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1175;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 29000 && valor < 34000){
+                if( vei == 1){
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.081;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.081;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1135;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 34000 && valor < 38000){
+                if( vei == 1){
+            vista = valor*0.054;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.079;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.079;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1095;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 38000 && valor < 42000){
+                if( vei == 1){
+            vista = valor*0.052;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.079;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.07;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.11;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }else if(valor >= 42000 && valor < 46000){
+                if( vei == 1){
+            vista = valor*0.05;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.07;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.105;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 46000 && valor < 50000){
+                if( vei == 1){
+            vista = valor*0.048;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.065;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.1;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 50000 && valor < 55000){
+                if( vei == 1){
+            vista = valor*0.048;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.065;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext= vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.095;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 55000 && valor < 60000){
+                if( vei == 1){
+            vista = valor*0.048;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.065;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.09;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            }           
+    }
+    else if(valor >= 60000 && valor <= 70000){
+                if( vei == 1){
+            vista = valor*0.048;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.065;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.09;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
+            }
+            }
+            }
             }
             catch(Exception ex){
                 out.println("<span style='color:red;'>Você entrou com um número no formato inválido no campo de Valor. Tente novamente: </span><br>");
@@ -1188,6 +4557,11 @@
                 | MOTO: <input type='radio' name='veiculo' value='moto'>
                 | UTILITÁRIO: <input type='radio' name='veiculo' value='utilitario'>
                 | CAMINHÃO: <input type='radio' name='veiculo' value='caminhao'> |</br></br>
+                <h4>TIPO DE COTAÇÃO</h4>
+                | NORMAL: <input type='radio' name='cotacao' value='normal'>
+                | - 1: <input type='radio' name='cotacao' value='menosum'>
+                | - 1/2: <input type='radio' name='cotacao' value='menosmeio'>
+                | + 1/2: <input type='radio' name='cotacao' value='maismeio'> | </br></br>
                 <input type='submit' name='Enviar' value='Enviar'>                          
                 </form>
         </fieldset></div>
