@@ -1165,6 +1165,64 @@
             dezxt = vistat/10*1.865;
             dozext = vistat/12*1.1156;
             } 
+    }   else if(valor >= 70000 && valor <= 80000){
+                if( vei == 1){
+            vista = valor*0.04;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.064;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.06;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.08;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
     }
              
     }else if(cotacao.equals("menosum")){
@@ -2290,6 +2348,65 @@
             } 
     
                 }
+        else if(valor >= 70000 && valor <= 80000){
+                if( vei == 1){
+            vista = valor*0.033;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.064;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.075;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
+    }        
     }else if(cotacao.equals("menosmeio")){
     if(valor >= 5000 && valor < 8000){
                 if( vei == 1){
@@ -3385,6 +3502,65 @@
         }
         else if (vei == 3) {
             vista = valor*0.055;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.08;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
+    }
+        else if(valor >= 70000 && valor <= 80000){
+                if( vei == 1){
+            vista = valor*0.068;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.063;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.057;
             tresx = vista/3;
             quatrox = vista/4*1.0226;
             seisx = vista/6*1.0468;
@@ -4534,6 +4710,65 @@
             dozext = vistat/12*1.1156;
             } 
             }
+        else if(valor >= 70000 && valor <= 80000){
+                if( vei == 1){
+            vista = valor*0.053;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+            
+        }
+        else if (vei == 2) {
+            vista = valor*0.072;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.09;
+            dozex = vista/12*1.15;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.09;
+            dozext = vistat/12*1.15;
+        }
+        else if (vei == 3) {
+            vista = valor*0.065;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.0865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.0865;
+            dozext = vistat/12*1.1156;
+        }
+        else if (vei == 4) {
+            vista = valor*0.09;
+            tresx = vista/3;
+            quatrox = vista/4*1.0226;
+            seisx = vista/6*1.0468;
+            dezx = vista/10*1.865;
+            dozex = vista/12*1.1156;
+            vistat = vista + tx;
+            tresxt = vistat/3;
+            quatroxt = vistat/4*1.0226;
+            seisxt = vistat/6*1.0468;
+            dezxt = vistat/10*1.865;
+            dozext = vistat/12*1.1156;
+            } 
+            }
             }
             }
             }
@@ -4559,9 +4794,9 @@
                 | CAMINHÃO: <input type='radio' name='veiculo' value='caminhao'> |</br></br>
                 <h4>TIPO DE COTAÇÃO</h4>
                 | NORMAL: <input type='radio' name='cotacao' value='normal'>
-                | - 1: <input type='radio' name='cotacao' value='menosum'>
-                | - 1/2: <input type='radio' name='cotacao' value='menosmeio'>
-                | + 1/2: <input type='radio' name='cotacao' value='maismeio'> | </br></br>
+                | S/GUINCHO: <input type='radio' name='cotacao' value='menosum'>
+                | S/FRANQUIA: <input type='radio' name='cotacao' value='menosmeio'>
+                | COMPLETO: <input type='radio' name='cotacao' value='maismeio'> | </br></br>
                 <input type='submit' name='Enviar' value='Enviar'>                          
                 </form>
         </fieldset></div>
