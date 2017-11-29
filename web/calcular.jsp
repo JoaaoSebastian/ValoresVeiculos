@@ -4773,7 +4773,7 @@
             }
             }
             catch(Exception ex){
-                out.println("<span style='color:red;'>Você entrou com um número no formato inválido no campo de Valor. Tente novamente: </span><br>");
+                out.println("<span style='color:red;'>Você não selecionou as opções necessárias. Tente novamente: </span><br>");
             }
               
               %>
@@ -4797,6 +4797,7 @@
                 | S/GUINCHO: <input type='radio' name='cotacao' value='menosum'>
                 | S/FRANQUIA: <input type='radio' name='cotacao' value='menosmeio'>
                 | COMPLETO: <input type='radio' name='cotacao' value='maismeio'> | </br></br>
+                DIGITE A FRANQUIA: <input type='text' name='franquia' value='' size='45'></br></br>
                 <input type='submit' name='Enviar' value='Enviar'>                          
                 </form>
         </fieldset></div>
@@ -4853,6 +4854,12 @@
             <td ><center>R$ <%=new DecimalFormat("0.00").format(seisxt)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(dezxt)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(dozext)%></center></td>
+        </tr>
+        <tr>
+            <th colspan='8' class="bg-primary"><center>DESCRIÇÃO DE FRANQUIA</center></th>
+        </tr>
+        <tr>
+            <td colspan='8'><center><%=request.getParameter("franquia")%></center></td>
         </tr>
         <%}%>
             </table></center></div> 
