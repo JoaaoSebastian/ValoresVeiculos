@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.text.DecimalFormat"%>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -4825,7 +4826,7 @@
             <th colspan='8' class="bg-primary"><center>CÁLCULO DE RASTREAMENTO/SEGURO</center></th>
         </tr>
         <tr>
-            <th width='120'><center>Adesão</center></th>
+            <th width='120'><center>Pagamento</center></th>
             <th width='120'><center>Valor Veículo</center></th>
             <th width='120'><center>Á vista</center></th>
             <th width='120'><center>3x sem juros</center></th>
@@ -4835,7 +4836,7 @@
             <th width='120'><center>12x </center></th>
         </tr>
         <tr>
-            <th ><center>Não Incluso</center></th>
+            <th ><center>Cartão</center></th>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(vista)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(tresx)%></center></td>
@@ -4846,7 +4847,7 @@
         </tr>
         
         <tr>
-            <th ><center>Incluso</center></th>
+            <th ><center>Boleto</center></th>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(vistat)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(tresxt)%></center></td>
