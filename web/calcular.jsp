@@ -4799,12 +4799,14 @@
                 | S/FRANQUIA: <input type='radio' name='cotacao' value='menosmeio'>
                 | COMPLETO: <input type='radio' name='cotacao' value='maismeio'> | </br></br>
                 DIGITE A FRANQUIA: <input type='text' name='franquia' value='' size='45'></br></br>
+                DATA DE EXPIRAÇÃO: <input type='date' name='exp' value='' size='30'</br></br>
                 <input type='submit' name='Enviar' value='Enviar'>                          
                 </form>
         </fieldset></div>
             
               <%
     if(request.getParameter("Enviar") != null){%>
+    <img src="imgs/segseguro.jpg" align="center"/>
     </br>
     <div class="container-fluid">
         <center> <table class="table table-bordered table-hover">
@@ -4861,6 +4863,9 @@
         </tr>
         <tr>
             <td colspan='8'><center><%=request.getParameter("franquia")%></center></td>
+        </tr>
+        <tr>
+            <th colspan='8' class="bg-primary"><center>VALIDO ATÉ <%=request.getParameter("exp")%></center></th>
         </tr>
         <%}%>
             </table></center></div> 
