@@ -4798,15 +4798,30 @@
                 | S/GUINCHO: <input type='radio' name='cotacao' value='menosum'>
                 | S/FRANQUIA: <input type='radio' name='cotacao' value='menosmeio'>
                 | COMPLETO: <input type='radio' name='cotacao' value='maismeio'> | </br></br>
+                DADOS DE CONTRATAÇÃO:</br></br>
+                DIGITE A ADESÃO: <input type='text' name='adesao' value='' size='45'></br></br>
                 DIGITE A FRANQUIA: <input type='text' name='franquia' value='' size='45'></br></br>
-                DATA DE EXPIRAÇÃO: <input type='date' name='exp' value='' size='30'</br></br>
+                DIGITE A ASSISTÊNCIA: <input type='text' name='assistencia' value='' size='45'></br></br>
+                DIGITE AS OPCIONAIS: <input type='text' name='opcionais' value='' size='45'></br></br>
+                PERFIL DO CONTRATANTE:</br></br>
+                CONDUTOR: <input type='text' name='condutor' value='' size='45'></br></br>
+                ESTADO CÍVIL: <input type='text' name='estcivil' value='' size='45'></br></br>
+                IDADE: <input type='text' name='idade' value='' size='45'></br></br>
+                CIDADE: <input type='text' name='cidade' value='' size='45'></br></br>
+                PERFIL DO VEÍCULO:</br></br>
+                TIPO DE VEÍCULO: <input type='text' name='tpvei' value='' size='45'></br></br>
+                USO DO VEÍCULO: <input type='text' name='usovei' value='' size='45'></br></br>
+                GARAGEAMENTO: <input type='text' name='gara' value='' size='45'></br></br>
+                ACESSÓRIOS: <input type='text' name='acess' value='' size='45'></br></br>
+                DATA DE HOJE: <input type='text' name='hoje' value='' size='30'</br></br>
+                DATA DE EXPIRAÇÃO: <input type='text' name='exp' value='' size='30'</br></br>
                 <input type='submit' name='Enviar' value='Enviar'>                          
                 </form>
         </fieldset></div>
             
               <%
     if(request.getParameter("Enviar") != null){%>
-    <img src="imgs/segseguro.jpg" align="center"/>
+    <center><img src="imgs/segseguro.jpg" align="center"/></center>
     </br>
     <div class="container-fluid">
         <center> <table class="table table-bordered table-hover">
@@ -4814,10 +4829,10 @@
             <th colspan='8' class="bg-primary"><center>INFORMAÇÕES DO VEÍCULO</center></th>
         </tr>
         <tr>
-            <th colspan='2' width='120'><center>Modelo</center></th>
-            <th colspan='2' width='120'><center>Ano</center></th>
-            <th colspan='2' width='120'><center>Cor</center></th>
-            <th colspan='2' width='120'><center>Placa</center></th>   
+            <th colspan='2' width='120'><center>MODELO</center></th>
+            <th colspan='2' width='120'><center>ANO</center></th>
+            <th colspan='2' width='120'><center>COR</center></th>
+            <th colspan='2' width='120'><center>PLACA</center></th>   
         </tr>
         <tr>
             <td colspan='2'><center><%=request.getParameter("modelo")%></center></td>
@@ -4828,17 +4843,17 @@
             <th colspan='8' class="bg-primary"><center>CÁLCULO DE RASTREAMENTO/SEGURO</center></th>
         </tr>
         <tr>
-            <th width='120'><center>Pagamento</center></th>
-            <th width='120'><center>Valor Veículo</center></th>
-            <th width='120'><center>Á vista</center></th>
-            <th width='120'><center>3x sem juros</center></th>
+            <th width='120'><center>PAGAMENTO</center></th>
+            <th width='120'><center>VALOR CASCO</center></th>
+            <th width='120'><center>Á VISTA</center></th>
+            <th width='120'><center>3x S/ JUROS</center></th>
             <th width='120'><center>4x </center></th>
             <th width='120'><center>6x </center></th>
             <th width='120'><center>10x </center></th>
             <th width='120'><center>12x </center></th>
         </tr>
         <tr>
-            <th ><center>Cartão</center></th>
+            <th ><center>CARTÃO</center></th>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(vista)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(tresx)%></center></td>
@@ -4859,13 +4874,57 @@
             <td ><center>R$ <%=new DecimalFormat("0.00").format(dozext)%></center></td>
         </tr>
         <tr>
-            <th colspan='8' class="bg-primary"><center>DESCRIÇÃO DE FRANQUIA</center></th>
+            <th colspan='8' class="bg-primary"><center>DADOS DE CONTRATAÇÃO</center></th>
         </tr>
         <tr>
-            <td colspan='8'><center><%=request.getParameter("franquia")%></center></td>
+            <th colspan='2'><center>ADESÃO</center></th>
+            <th colspan='2'><center>FRANQUIA</center></th>
+            <th colspan='2'><center>ASSISTÊNCIAS</center></th>
+            <th colspan='2'><center>OPCIONAIS</center></th>
         </tr>
         <tr>
-            <th colspan='8' class="bg-primary"><center>VALIDO ATÉ <%=request.getParameter("exp")%></center></th>
+            <td colspan='2'><center><%=request.getParameter("adesao")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("franquia")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("assistencia")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("opcionais")%></center></td>
+        </tr>
+        <tr>
+            <th colspan='8' class="bg-primary"><center>PERFIL DO CONTRATANTE</center></th>
+        </tr>
+        <tr>
+            <th colspan='2'><center>CONDUTOR</center></th>
+            <th colspan='2'><center>ESTADO CÍVIL</center></th>
+            <th colspan='2'><center>IDADE</center></th>
+            <th colspan='2'><center>CIDADE</center></th>
+        </tr>
+        <tr>
+            <td colspan='2'><center><%=request.getParameter("condutor")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("estcivil")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("idade")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("cidade")%></center></td>
+        </tr>
+        <tr>
+            <th colspan='8' class="bg-primary"><center>PERFIL DO VEÍCULO</center></th>
+        </tr>
+        <tr>
+            <th colspan='2'><center>TIPO VEÍCULO</center></th>
+            <th colspan='2'><center>USO VEÍCULO</center></th>
+            <th colspan='2'><center>GARAGEAMENTO</center></th>
+            <th colspan='2'><center>ACESSÓRIOS</center></th>
+        </tr>
+        <tr>
+            <td colspan='2'><center><%=request.getParameter("tpvei")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("usovei")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("gara")%></center></td>
+            <td colspan='2'><center><%=request.getParameter("acess")%></center></td>
+        </tr>
+        <tr>
+            <th colspan='4' class="bg-primary"><center>DATA DO CÁLCULO</center></th>
+            <th colspan='4' class="bg-primary"><center>VALIDO ATÉ </center></th>
+        </tr>
+        <tr>
+            <th colspan='4' ><center> <%=request.getParameter("hoje")%></center></th>
+            <th colspan='4' ><center> <%=request.getParameter("exp")%></center></th>
         </tr>
         <%}%>
             </table></center></div> 
