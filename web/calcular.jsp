@@ -4864,7 +4864,7 @@
         </tr>
         
         <tr>
-            <th ><center>Boleto</center></th>
+            <th ><center>BOLETO</center></th>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(valor)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(vistat)%></center></td>
             <td ><center>R$ <%=new DecimalFormat("0.00").format(tresxt)%></center></td>
